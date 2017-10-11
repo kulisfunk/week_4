@@ -1,0 +1,31 @@
+.grid-row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.cell {
+  flex: 1;
+  border: 1px solid blue;
+  padding: 20px;
+
+}
+
+@media all and (min-width: 480px) {
+  .grid-row-sm {
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 720px) {
+  .grid-row-md {
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .grid-row-lg {
+    flex-direction: row;
+  }
+}
