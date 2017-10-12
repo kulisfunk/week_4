@@ -1,5 +1,18 @@
 <p>All the students at Hogwarts!</p>
-<% @students.each do |student| %>
-<%= student.to_s %> <br/>
 
-<% end %>
+
+<div class="students">
+ <% @students.each do |student| %>
+ <div class="individual">
+   <div class="names">
+   <p>Student Name:  <%= student.student_name()%>    </p>
+   </div>
+   <div class="age">
+   <p> Age: <%= student.age()%>    </p>
+   </div>
+   <div class="house">
+   <p>House: <%= student.house()%></p>
+   </div>
+  </div>
+ <% end %>
+</div>

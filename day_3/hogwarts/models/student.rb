@@ -68,6 +68,15 @@ class Student
     sql = "SELECT * FROM houses WHERE id = $1;"
     values = [@house_id]
     houses = SqlRunner.run(sql, values)
-    return House.new(houses.first)
+    return House.new(houses.first).house_name
   end
+
+  def student_name()
+    return "#{@first_name} #{@last_name}"
+  end
+
+  def age()
+    return "#{@age}"
+  end
+
 end
